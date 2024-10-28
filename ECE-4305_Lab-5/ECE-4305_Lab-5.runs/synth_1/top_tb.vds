@@ -1,0 +1,228 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Oct 21 15:27:58 2024
+# Process ID: 507910
+# Current directory: /home/noah/Projects/ECE-4305_Lab-5/ECE-4305_Lab-5/ECE-4305_Lab-5.runs/synth_1
+# Command line: vivado -log top_tb.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_tb.tcl
+# Log file: /home/noah/Projects/ECE-4305_Lab-5/ECE-4305_Lab-5/ECE-4305_Lab-5.runs/synth_1/top_tb.vds
+# Journal file: /home/noah/Projects/ECE-4305_Lab-5/ECE-4305_Lab-5/ECE-4305_Lab-5.runs/synth_1/vivado.jou
+# Running On        :bazaar
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 22.04.5 LTS
+# Processor Detail  :AMD Ryzen 7 3800X 8-Core Processor
+# CPU Frequency     :2120.185 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :50391 MB
+# Swap memory       :2051 MB
+# Total Virtual     :52442 MB
+# Available Virtual :38561 MB
+#-----------------------------------------------------------
+source top_tb.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1458.523 ; gain = 54.836 ; free physical = 24171 ; free virtual = 36341
+Command: read_checkpoint -auto_incremental -incremental /home/noah/Projects/ECE-4305_Lab-5/ECE-4305_Lab-5/ECE-4305_Lab-5.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/noah/Projects/ECE-4305_Lab-5/ECE-4305_Lab-5/ECE-4305_Lab-5.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_tb -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 507988
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1891.082 ; gain = 419.684 ; free physical = 23394 ; free virtual = 35564
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_tb' [/home/noah/Projects/ECE-4305_Lab-5/ECE-4305_Lab-5/ECE-4305_Lab-5.srcs/sources_1/new/top_tb.sv:1]
+WARNING: [Synth 8-6896] event control except as first statement of always block inside initial block, initial block items will be ignored [/home/noah/Projects/ECE-4305_Lab-5/ECE-4305_Lab-5/ECE-4305_Lab-5.srcs/sources_1/new/top_tb.sv:30]
+WARNING: [Synth 8-6896] event control except as first statement of always block inside initial block, initial block items will be ignored [/home/noah/Projects/ECE-4305_Lab-5/ECE-4305_Lab-5/ECE-4305_Lab-5.srcs/sources_1/new/top_tb.sv:42]
+INFO: [Synth 8-6157] synthesizing module 'top' [/home/noah/Projects/ECE-4305_Lab-5/ECE-4305_Lab-5/ECE-4305_Lab-5.srcs/sources_1/new/top.sv:23]
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FIFO_register_file' [/home/noah/Projects/ECE-4305_Lab-5/ECE-4305_Lab-5/ECE-4305_Lab-5.srcs/sources_1/new/FIFO_register_file.sv:23]
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_register_file' (0#1) [/home/noah/Projects/ECE-4305_Lab-5/ECE-4305_Lab-5/ECE-4305_Lab-5.srcs/sources_1/new/FIFO_register_file.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'FIFO_control_unit' [/home/noah/Projects/ECE-4305_Lab-5/ECE-4305_Lab-5/ECE-4305_Lab-5.srcs/sources_1/new/FIFO_control_unit.sv:1]
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_control_unit' (0#1) [/home/noah/Projects/ECE-4305_Lab-5/ECE-4305_Lab-5/ECE-4305_Lab-5.srcs/sources_1/new/FIFO_control_unit.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [/home/noah/Projects/ECE-4305_Lab-5/ECE-4305_Lab-5/ECE-4305_Lab-5.srcs/sources_1/new/top.sv:23]
+WARNING: [Synth 8-85] always block has no event control specified [/home/noah/Projects/ECE-4305_Lab-5/ECE-4305_Lab-5/ECE-4305_Lab-5.srcs/sources_1/new/top_tb.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'top_tb' (0#1) [/home/noah/Projects/ECE-4305_Lab-5/ECE-4305_Lab-5/ECE-4305_Lab-5.srcs/sources_1/new/top_tb.sv:1]
+WARNING: [Synth 8-4767] Trying to implement RAM 'memory_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "memory_reg" dissolved into registers
+WARNING: [Synth 8-3848] Net reset in module/entity top_tb does not have driver. [/home/noah/Projects/ECE-4305_Lab-5/ECE-4305_Lab-5/ECE-4305_Lab-5.srcs/sources_1/new/top_tb.sv:8]
+WARNING: [Synth 8-3848] Net wr in module/entity top_tb does not have driver. [/home/noah/Projects/ECE-4305_Lab-5/ECE-4305_Lab-5/ECE-4305_Lab-5.srcs/sources_1/new/top_tb.sv:9]
+WARNING: [Synth 8-3848] Net rd in module/entity top_tb does not have driver. [/home/noah/Projects/ECE-4305_Lab-5/ECE-4305_Lab-5/ECE-4305_Lab-5.srcs/sources_1/new/top_tb.sv:9]
+WARNING: [Synth 8-3848] Net w_data in module/entity top_tb does not have driver. [/home/noah/Projects/ECE-4305_Lab-5/ECE-4305_Lab-5/ECE-4305_Lab-5.srcs/sources_1/new/top_tb.sv:10]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1967.020 ; gain = 495.621 ; free physical = 23290 ; free virtual = 35461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1981.863 ; gain = 510.465 ; free physical = 23290 ; free virtual = 35461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1989.867 ; gain = 518.469 ; free physical = 23290 ; free virtual = 35461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2006.781 ; gain = 535.383 ; free physical = 23272 ; free virtual = 35444
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input    4 Bit        Muxes := 8     
+	   2 Input    1 Bit        Muxes := 10    
+	   3 Input    1 Bit        Muxes := 4     
+	   4 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Device 21-9227] Part: xc7a100tcsg324-1 does not have CEAM library.
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2132.125 ; gain = 660.727 ; free physical = 23174 ; free virtual = 35349
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2132.125 ; gain = 660.727 ; free physical = 23177 ; free virtual = 35351
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2132.125 ; gain = 660.727 ; free physical = 23177 ; free virtual = 35351
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2132.125 ; gain = 660.727 ; free physical = 23183 ; free virtual = 35358
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2132.125 ; gain = 660.727 ; free physical = 23183 ; free virtual = 35358
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2132.125 ; gain = 660.727 ; free physical = 23183 ; free virtual = 35358
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2132.125 ; gain = 660.727 ; free physical = 23183 ; free virtual = 35358
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2132.125 ; gain = 660.727 ; free physical = 23183 ; free virtual = 35358
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2132.125 ; gain = 660.727 ; free physical = 23183 ; free virtual = 35358
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2132.125 ; gain = 660.727 ; free physical = 23183 ; free virtual = 35358
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2132.125 ; gain = 660.727 ; free physical = 23183 ; free virtual = 35358
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2132.133 ; gain = 660.727 ; free physical = 23183 ; free virtual = 35358
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2132.133 ; gain = 0.000 ; free physical = 23463 ; free virtual = 35637
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2223.688 ; gain = 0.000 ; free physical = 23393 ; free virtual = 35568
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 957e60d5
+INFO: [Common 17-83] Releasing license: Synthesis
+23 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 2223.688 ; gain = 761.195 ; free physical = 23393 ; free virtual = 35568
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1795.988; main = 1507.686; forked = 439.224
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3227.758; main = 2223.691; forked = 1095.629
+INFO: [Common 17-1381] The checkpoint '/home/noah/Projects/ECE-4305_Lab-5/ECE-4305_Lab-5/ECE-4305_Lab-5.runs/synth_1/top_tb.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_tb_utilization_synth.rpt -pb top_tb_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 21 15:28:22 2024...
